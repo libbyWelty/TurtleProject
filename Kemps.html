@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Slides: Kemp's Ridley Sea Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple transition for slides */
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Style for active navigation button */
+        .nav-button.active {
+            background-color: #047857; /* Emerald-700 */
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+
+        <!-- Header -->
+        <header class="text-center mb-8 p-6 bg-emerald-600 text-white rounded-lg shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Endangered Turtles of Alabama</h1>
+            <h2 class="text-xl md:text-2xl mt-2">Kemp's Ridley Sea Turtle (Lepidochelys kempii)</h2>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="flex flex-wrap justify-center gap-2 mb-8">
+            <button data-slide="0" class="nav-button active py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Overview</button>
+            <button data-slide="1" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Habitat</button>
+            <button data-slide="2" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Alabama Presence</button>
+            <button data-slide="3" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Nesting Habits</button>
+            <button data-slide="4" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Movement</button>
+            <button data-slide="5" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Footprints</button>
+            <button data-slide="6" class="nav-button py-2 px-4 bg-white rounded-md shadow-md hover:bg-emerald-100 transition-colors">Resources</button>
+        </nav>
+
+        <!-- Slide Container -->
+        <main id="slides-container" class="bg-white p-6 md:p-8 rounded-lg shadow-lg min-h-[500px]">
+
+            <!-- Slide 0: Overview -->
+            <section class="slide active">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Species Overview</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="mb-4">The Kemp's Ridley is the <span class="font-semibold">smallest and most critically endangered</span> sea turtle species in the world. They are named after Richard Moore Kemp, a fisherman from Key West who first submitted the species for identification in 1906.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><span class="font-semibold">Average Adult Size:</span> About 2 feet in length.</li>
+                            <li><span class="font-semibold">Average Adult Weight:</span> 70-100 pounds.</li>
+                            <li><span class="font-semibold">Appearance:</span> Adults have a distinctive round, grayish-green to olive carapace (top shell) and a yellowish-white plastron (bottom shell).</li>
+                            <li><span class="font-semibold">Diet:</span> They are primarily carnivores, feeding on crabs (especially blue crabs), clams, mussels, and shrimp.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                         <img src="https://marinesanctuary.org/wp-content/uploads/2021/07/WEB-kemps-ridley-sea-turtle-in-water-credit-noaa.jpg" alt="Kemp's Ridley Sea Turtle swimming" class="rounded-lg shadow-md max-h-72" onerror="this.onerror=null;this.src='https://placehold.co/400x288/CCCCCC/000000?text=Kemp%27s+Ridley';">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 1: Habitat -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Habitat</h3>
+                 <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="mb-4">Kemp's Ridleys prefer shallow, coastal waters with sandy or muddy bottoms where their prey is abundant. These areas are known as neritic zones.</p>
+                        <p class="mb-4">While they are most associated with the Gulf of Mexico, juveniles can be found along the Atlantic coast of North America. They spend the vast majority of their lives in the water, with females only coming ashore to nest.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><span class="font-semibold">Primary Habitat:</span> Gulf of Mexico.</li>
+                            <li><span class="font-semibold">Foraging Grounds:</span> Shallow coastal waters, bays, and estuaries.</li>
+                            <li><span class="font-semibold">Juvenile Habitat:</span> Can be found in seagrass beds along the Atlantic coast.</li>
+                        </ul>
+                    </div>
+                     <div class="flex justify-center">
+                         <img src="https://www.nps.gov/pais/learn/nature/images/Seagrass-Beds_2.jpg" alt="Coastal seagrass bed habitat" class="rounded-lg shadow-md max-h-72" onerror="this.onerror=null;this.src='https://placehold.co/400x288/CCCCCC/000000?text=Coastal+Habitat';">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 2: Alabama Presence -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Where to Find Them in Alabama</h3>
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="mb-4">In Alabama, Kemp's Ridley turtles are primarily found in the coastal waters of the Gulf of Mexico. While nesting is extremely rare in Alabama, they are frequently seen foraging in its waters.</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><span class="font-semibold">Key Areas:</span> Mobile Bay, Perdido Bay, and the waters off the coast of Baldwin and Mobile counties.</li>
+                            <li><span class="font-semibold">Nesting Sites:</span> While their main nesting beach is in Mexico, very rare and isolated nests have been documented along the Gulf Coast, including the Fort Morgan Peninsula and Dauphin Island in Alabama.</li>
+                            <li><span class="font-semibold">Conservation Note:</span> They are often seen by fishermen and boaters, and conservation efforts are crucial to protect their foraging grounds in Alabama.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                         <img src="https://www.outdooralabama.com/sites/default/files/styles/21x9/public/2021-08/Coastal%20Maps.jpg?h=a193dc58&itok=B1lO6e7c" alt="Map of Alabama's coastline" class="rounded-lg shadow-md max-h-72" onerror="this.onerror=null;this.src='https://placehold.co/400x288/CCCCCC/000000?text=Alabama+Coast';">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 3: Nesting Habits -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Unique Nesting Habits</h3>
+                 <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="mb-4">Kemp's Ridleys are famous for their unique, synchronized nesting behavior called an <span class="font-semibold">"arribada,"</span> which means "arrival" in Spanish. Thousands of females come ashore at the same time during daylight hours to lay their eggs.</p>
+                         <ul class="list-disc list-inside space-y-2">
+                            <li><span class="font-semibold">Primary Nesting Beach:</span> Rancho Nuevo, Tamaulipas, Mexico. Over 95% of all nesting occurs here.</li>
+                            <li><span class="font-semibold">Nesting Season:</span> Primarily from April to July.</li>
+                            <li><span class="font-semibold">Clutch Size:</span> About 100 eggs per nest. Females may nest 2-3 times per season.</li>
+                            <li><span class="font-semibold">Incubation Period:</span> Approximately 45 to 60 days. The sex of the hatchlings is determined by the temperature of the sand.</li>
+                        </ul>
+                    </div>
+                     <div class="flex justify-center">
+                         <img src="https://i.ytimg.com/vi/qQ8s3g2mI3o/maxresdefault.jpg" alt="Kemp's Ridley arribada nesting event" class="rounded-lg shadow-md max-h-72" onerror="this.onerror=null;this.src='https://placehold.co/400x288/CCCCCC/000000?text=Arribada';">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Slide 4: Movement (Locomotion) -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Movement and Locomotion</h3>
+                <p class="mb-4">Sea turtles are adapted for life in the ocean, but their movement on land is slow and laborious.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-emerald-600 mb-2">In Water</h4>
+                        <p>Kemp's Ridleys are powerful swimmers. They use their long front flippers for propulsion in a motion similar to a bird's flapping wings. Their rear flippers act as rudders for steering. They are capable of migrating long distances between foraging and nesting grounds.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-emerald-600 mb-2">On Land</h4>
+                        <p>On land, their movement is much different. They use a <span class="font-semibold">symmetrical gait</span>, moving both front flippers forward at the same time, then both rear flippers. This creates a distinctive track pattern in the sand as they drag their bodies forward. This is different from loggerhead turtles, which use an alternating gait.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Footprints for Tracking -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Identifying Footprints</h3>
+                <p class="mb-4">Identifying turtle tracks is key to finding nests for conservation. The symmetrical gait of the Kemp's Ridley leaves a unique pattern.</p>
+                <div class="grid md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <h4 class="text-lg font-semibold text-emerald-600 mb-2">Track Characteristics</h4>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><span class="font-semibold">Pattern:</span> Parallel, evenly spaced marks from the front flippers pushing into the sand at the same time.</li>
+                            <li><span class="font-semibold">Tail Drag Mark:</span> A central line down the middle of the tracks, though it can be faint.</li>
+                            <li><span class="font-semibold">Width:</span> The track width is relatively narrow, typically 25-30 inches, corresponding to the turtle's small size.</li>
+                            <li><span class="font-semibold">Flipper Marks:</span> The marks look like commas or crescent shapes in the sand.</li>
+                        </ul>
+                        <p class="mt-4">This symmetrical track is a key differentiator from other turtles like Loggerheads, which leave alternating, staggered flipper marks.</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-4">
+                        <img src="https://www.nps.gov/pais/learn/nature/images/kempsridleycrawler.jpg" alt="Kemp's Ridley tracks in the sand" class="rounded-lg shadow-md max-h-72 w-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x288/CCCCCC/000000?text=Turtle+Tracks';">
+                        <p class="text-sm text-gray-600 italic">Note the parallel flipper marks and central body drag.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Resources -->
+            <section class="slide">
+                <h3 class="text-2xl font-bold text-emerald-700 mb-4">Additional Resources</h3>
+                <p class="mb-6">Explore these links and videos to learn more about the Kemp's Ridley sea turtle and the efforts to save them.</p>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-lg font-semibold text-emerald-600">Informational Links</h4>
+                        <ul class="list-disc list-inside text-blue-600">
+                            <li><a href="https://www.fisheries.noaa.gov/species/kemps-ridley-turtle" target="_blank" class="hover:underline">NOAA Fisheries: Kemp's Ridley Profile</a></li>
+                            <li><a href="https://www.fws.gov/species/kemps-ridley-sea-turtle-lepidochelys-kempii" target="_blank" class="hover:underline">U.S. Fish & Wildlife Service Species Profile</a></li>
+                             <li><a href="https://www.outdooralabama.com/sea-turtles/alabama-sea-turtles" target="_blank" class="hover:underline">Outdoor Alabama: Sea Turtles</a></li>
+                            <li><a href="https://www.seaturtle.org/species/Lepidochelys_kempii.shtml" target="_blank" class="hover:underline">SeaTurtle.org: In-depth Species Information</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-emerald-600">Videos</h4>
+                        <ul class="list-disc list-inside text-blue-600">
+                            <li><a href="https://www.youtube.com/watch?v=qQ8s3g2mI3o" target="_blank" class="hover:underline">National Geographic: The "Arribada" Nesting Phenomenon</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=FprrqM219sY" target="_blank" class="hover:underline">Texas Parks & Wildlife: Kemp's Ridley Recovery</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=LziXA-3Gf8Y" target="_blank" class="hover:underline">NOAA Ocean Today: Sea Turtle Lifesaving Technology (TEDs)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script>
+        // Simple script to handle slide navigation
+        const navButtons = document.querySelectorAll('.nav-button');
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            // Remove active class from all buttons
+            navButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show the selected slide and mark its button as active
+            if (slides[index]) {
+                slides[index].classList.add('active');
+            }
+            if (navButtons[index]) {
+                navButtons[index].classList.add('active');
+            }
+        }
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const slideIndex = parseInt(button.getAttribute('data-slide'));
+                showSlide(slideIndex);
+            });
+        });
+
+        // Initialize with the first slide shown
+        showSlide(0);
+    </script>
+</body>
+</html>
