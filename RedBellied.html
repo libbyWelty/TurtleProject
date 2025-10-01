@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Turtles of Alabama: Alabama Red-bellied Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #2c5282; /* Deep blue */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+        .content {
+            padding: 2.5rem;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #2d3748;
+            border-bottom: 3px solid #718096;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .resource-link {
+            display: inline-block;
+            background-color: #3182ce;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .resource-link:hover {
+            background-color: #2b6cb0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <header class="header">
+            <h1>Endangered Turtles of Alabama</h1>
+            <p>The Alabama Red-bellied Turtle (<em>Pseudemys alabamensis</em>)</p>
+        </header>
+
+        <main class="content">
+            <!-- Introduction Section -->
+            <section class="section">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    The Alabama Red-bellied Turtle is a large, freshwater turtle that has been Alabama's official state reptile since 1990. It is a federally listed endangered species, found only in the fresh and brackish waters of the Mobile-Tensaw River Delta. Conservation efforts are crucial to protect this unique turtle from threats like habitat loss, pollution, and predation.
+                </p>
+            </section>
+
+            <!-- Image Gallery Section -->
+            <section class="section">
+                <h2 class="section-title">Image Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/7ab8a3/ffffff?text=Red-bellied+Turtle" alt="Alabama Red-bellied Turtle basking" title="Alabama Red-bellied Turtle showing its distinctive reddish plastron (belly).">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/4a7c59/ffffff?text=Turtle+in+Water" alt="Alabama Red-bellied Turtle in its aquatic habitat" title="A view of the turtle in the water, showcasing its dark carapace (shell).">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/d4b483/ffffff?text=Nesting+Habitat" alt="Typical nesting habitat for the turtle" title="Sandy soil near the water is ideal for nesting.">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habitat and Range Section -->
+            <section class="section">
+                <h2 class="section-title">Habitat & Range in Alabama</h2>
+                <div class="md:grid md:grid-cols-2 md:gap-8 items-center">
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            This species thrives in aquatic environments with abundant vegetation, which serves as its primary food source. They prefer slow-moving rivers, streams, and protected bays.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Its entire natural range is confined to the lower part of the Mobile-Tensaw River Delta in Mobile and Baldwin counties. They spend most of their lives in the water but come ashore to bask in the sun on logs and banks, and females travel upland to nest.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/a2c4c9/ffffff?text=Mobile-Tensaw+Delta+Map" alt="Map showing the range of the Alabama Red-bellied Turtle in Alabama" class="rounded-lg shadow-md mt-4 md:mt-0">
+                         <p class="text-center text-sm text-gray-500 mt-2">Historic range is limited to the Mobile-Tensaw Delta.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Nesting & Movement Section -->
+            <section class="section">
+                 <h2 class="section-title">Nesting, Movement & Tracks</h2>
+                 <div class="md:grid md:grid-cols-2 md:gap-8 items-start">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Nesting Habits</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Nesting season typically runs from May through July. The female turtle will leave the water and travel upland to find a suitable spot with open, sandy, and well-drained soil that is exposed to direct sunlight. She digs a flask-shaped nest with her hind feet and lays a clutch of about 4-9 eggs. After laying, she covers the nest, making it difficult to spot.
+                        </p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Locomotion</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            In water, they are graceful swimmers, using their webbed feet for propulsion. On land, their movement is much slower and more cumbersome as they pull their heavy shells forward.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Identifying Footprints</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            For your AI model, turtle tracks have distinct features. Look for a central drag mark left by the tail, with comma-shaped claw marks on either side from their feet. The stride (distance between steps) is often short. The exact size depends on the turtle, but the pattern is a key identifier.
+                        </p>
+                        <img src="https://placehold.co/600x400/e2d8c1/ffffff?text=Turtle+Footprints" alt="Example of freshwater turtle tracks in sand" class="rounded-lg shadow-md">
+                         <p class="text-center text-sm text-gray-500 mt-2">General turtle tracks showing claw marks and a central tail drag line.</p>
+                    </div>
+                 </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section class="section">
+                <h2 class="section-title">Additional Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Useful Links</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><a href="https://www.outdooralabama.com/turtles/alabama-red-bellied-turtle" target="_blank" class="text-blue-600 hover:underline">Alabama Dept. of Conservation and Natural Resources</a></li>
+                            <li><a href="https://www.fws.gov/species/alabama-red-bellied-turtle-pseudemys-alabamensis" target="_blank" class="text-blue-600 hover:underline">U.S. Fish & Wildlife Service Profile</a></li>
+                            <li><a href="https://www.biologicaldiversity.org/species/reptiles/Alabama_red-bellied_turtle/" target="_blank" class="text-blue-600 hover:underline">Center for Biological Diversity</a></li>
+                        </ul>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Video</h3>
+                        <p class="text-gray-700 mb-4">Watch this short documentary to see the turtle in its natural habitat and learn about conservation efforts.</p>
+                        <a href="https://www.youtube.com/watch?v=kSLT8U-9VmQ" target="_blank" class="resource-link">
+                            Watch Video on YouTube
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
